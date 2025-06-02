@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyndovsk Studio Translit - Переводы манги</title>
+    <style>
+        :root {
+            --main-color: #ff6b9e;
+            --secondary-color: #333;
+            --bg-color: #f8f8f8;
+            --text-color: #333;
+            --light-text: #777;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--main-color), #ff8ab3);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .tagline {
+            font-style: italic;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            padding: 1rem 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--main-color);
+        }
+        
+        .main-content {
+            padding: 3rem 0;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card h2 {
+            color: var(--main-color);
+            margin-top: 0;
+        }
+        
+        .project-card img {
+            max-width: 200px;
+            border-radius: 4px;
+            float: left;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--main-color);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #ff4d8a;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .project-card img {
+                float: none;
+                display: block;
+                margin: 0 auto 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dyndovsk Studio Translit</h1>
+            <p class="tagline">Качественные переводы манги</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#about">О студии</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main-content container">
+        <section id="projects">
+            <h2>Наши проекты</h2>
+            
+            <div class="project-card clearfix">
+                <img src="https://mangalib.me/uploads/cover/pink-reaper/cover/f0h1QZ1Q3J8x_250x350.jpg" alt="Обложка Розового Жнеца">
+                <h2>Розовый Жнец</h2>
+                <p>История о необычном наёмнике по прозвищу "Розовый Жнец", который выделяется не только своими навыками, но и ярким внешним видом.</p>
+                <p>Статус: В процессе перевода</p>
+                <a href="https://mangalib.me/ru/manga/89702--pink-reaper?ui=10681778" class="btn" target="_blank">Читать на Mangalib</a>
+            </div>
+        </section>
+        
+        <section id="about">
+            <h2>О студии</h2>
+            <div class="project-card">
+                <p>Dyndovsk Studio Translit - это небольшая студия перевода манги, состоящая пока что из одного человека. Мы стремимся предоставлять качественные переводы, сохраняя атмосферу оригинального произведения.</p>
+                <p>На данный момент мы работаем над переводом "Розового Жнеца", но в планах есть и другие проекты.</p>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Контакты</h2>
+            <div class="project-card">
+                <p>По вопросам сотрудничества или предложениям новых проектов вы можете связаться с нами:</p>
+                <p>Email: dyndovsk@example.com</p>
+                <p>Telegram: @dyndovsk</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Dyndovsk Studio Translit. Все права защищены.</p>
+            <p>Мы не храним и не распространяем мангу, а лишь предоставляем переводы для чтения на Mangalib.me</p>
+        </div>
+    </footer>
+</body>
+</html>
